@@ -1,0 +1,28 @@
+{
+  "name": "Simple Bar Chart",
+  "version": "1.0.0",
+  "description": "Responsive SVG bar chart with tooltip, legend, and Sigma-friendly data bridge.",
+  "entrypoint": "index.html",
+  "thumbnail": "https://uploads.sigmacomputing.com/plugins/bar-chart.png",
+  "defaultWidth": 6,
+  "defaultHeight": 4,
+  "author": "Sigma Plugin Example",
+  "permissions": [],
+  "configuration": {
+    "fields": [
+      {
+        "key": "dimension",
+        "label": "Dimension",
+        "type": "column",
+        "required": true
+      },
+      {
+        "key": "measure",
+        "label": "Measure",
+        "type": "column",
+        "required": true,
+        "aggregations": ["sum", "count", "avg"]
+      }
+    ]
+  }
+}
